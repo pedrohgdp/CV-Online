@@ -1,0 +1,123 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    background-color: blue;
+    width: 1365px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    padding: 2px;
+}
+
+/*Estilo para cada botão do nav*/
+.nav a{
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s, transform 0.2, border-radius 0.3s;
+}
+
+/* Aplicação da cor cinza quando bota o mouse em cima da opção, com borda arredondada*/
+.nav a:hover {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.sessao{
+    display: flex;
+    justify-content: center;
+    padding: 110px;
+}
+
+.sobre-mim-container {
+    position: relative;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 200px 40px 40px 40px;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: visible;
+}
+
+.foto-perfil{
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /*Ajudar a imagem*/
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+h1{
+    font-size: 150px;
+    margin-bottom: 20px;
+}
+
+.texto p {
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+
+/*Estilo para celular*/
+@media (max-width: 600px) {
+    @media (max-width: 600px) {
+        .sessao {
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px; /* Reduz o padding em mobile */
+        }
+        
+        .foto-perfil {
+            width: 120px;
+            height: 120px;
+            position: static; /* Remove o posicionamento absoluto */
+            margin: -90px auto -10px; /* Centraliza e ajusta a posição */
+            left: auto;
+            top: auto;
+        }
+        
+        .sobre-mim-container {
+            padding: 40px 20px 20px; /* Ajuste para mobile */
+            margin-top: 60px; /* Espaço para a foto */
+        }
+        
+        h1 {
+            font-size: 50px; /* Título menor */
+            text-align: center;
+        }
+        
+        .texto p {
+            font-size: 14px; /* Texto um pouco menor */
+        }
+        
+        .cabecalho {
+            height: 100px; /* Cabeçalho mais compacto */
+            font-size: 18px;
+        }
+        
+        .nav a {
+            font-size: 16px; /* Links menores */
+            padding: 8px;
+        }
+    }
+}

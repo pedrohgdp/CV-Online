@@ -1,23 +1,94 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 .cabecalho {
-    background-color: blue;
-    width: 100%;
+    width: 1365px;
     height: 150px;
     display: flex;
     align-items: center;
     font-size: 24px;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
-
 .nav {
     display: flex;
-    align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    padding: 2px;
+}
+
+/*Estilo para cada botão do nav*/
+.nav a{
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s, transform 0.2, border-radius 0.3s;
+}
+
+/* Aplicação da cor cinza quando bota o mouse em cima da opção, com borda arredondada*/
+.nav a:hover {
+    background-color: #ccc;
+    border-radius: 10px;
+  }
+
+
+
+h1 {
+    padding: 20px;
+    margin: 100px;
+    text-align: center;
+    font-size: 100px;
+} 
+
+p {
+    text-align: center;
+    font-size: 20px;
+}
+
+/*Media query para ajustes específicos em celular */
+@media (max-width: 600px) {
+    .sessao {
+        padding: 15px;
+    }
+    
+    .sobre-mim-container {
+        padding: 160px 15px 30px 15px;
+        border-radius: 15px;
+    }
+    
+    .foto-perfil {
+        width: 180px;
+        height: 180px;
+        top: -90px;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    
+    h1 {
+        font-size: 80px;
+        line-height: 1;
+        margin-bottom: 15px;
+    }
+    
+    .texto p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .nav a {
+        width: 100%;
+        text-align: center;
+        padding: 8px 5px;
+    }
 }
