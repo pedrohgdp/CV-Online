@@ -128,41 +128,52 @@ h1{
     }
 
     h1 {
-        font-size: clamp(24px, 6vw, 60px);
+        font-size: 80px;
     }
 
     .nav {
         flex-direction: column;
         align-items: center;
         gap: 10px;
+        padding: 0; /* Retira o padding extra */
+    }
+
+    .nav a {
+        padding: 8px;
+        font-size: 16px; /* Diminui o tamanho da fonte */
     }
 
     .sessao {
         padding: 20px;
+        flex-direction: column; /* Empilha as sessões para maior espaço */
     }
 
     .Container {
         padding: 10px;
+        width: 90%; /* Ajusta o tamanho do container */
     }
 
     .JogoVelha,
     .CampoMinado,
     .CalculoNumerico {
-        flex-direction: column; /* empilha imagem, texto e link */
+        flex-direction: column; /* Empilha a imagem, texto e link */
         align-items: center;
         text-align: center;
+        gap: 15px;
     }
 
     .ImgJogoVelha,
     .ImgCampoMinado,
     .ImgCalculoNumerico {
         width: 100%;
-        max-width: 300px;
+        max-width: 280px; /* Ajusta a largura máxima das imagens */
+        height: auto;
     }
 
     .linkTicTac,
     .linkCampoMinado,
     .LinkCalculoNumerico {
-        font-size: 16px;
+        font-size: 14px; /* Diminui o tamanho da fonte dos links */
+        color: #6C00F7; /* Adiciona uma cor ao texto para destaque */
     }
 }

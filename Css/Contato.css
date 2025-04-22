@@ -116,3 +116,49 @@ button:hover {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+/*Para celular*/
+@media (max-width: 600px) {
+    .cabecalho {
+        height: 120px; 
+        font-size: 18px; 
+    }
+
+    .nav {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 10px;
+    }
+
+    .nav a {
+        padding: 8px;
+        font-size: 18px; 
+    }
+
+    h1 {
+        font-size: 80px; 
+    }
+
+    .sessao {
+        padding: 30px; 
+    }
+
+    .form-contato {
+        gap: 10px; 
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 12px; 
+    }
+
+    button {
+        font-size: 14px; 
+        padding: 10px; 
+    }
+
+    .Container {
+        padding: 15px; 
+        width: 90%; 
+    }
+}

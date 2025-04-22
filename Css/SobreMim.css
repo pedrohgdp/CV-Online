@@ -94,34 +94,34 @@ h1{
         .sessao {
             flex-direction: column;
             gap: 20px;
-            padding: 20px; /* Reduz o padding em mobile */
+            padding: 20px; 
         }
         
         .foto-perfil {
             width: 120px;
             height: 120px;
-            position: static; /* Remove o posicionamento absoluto */
-            margin: -90px auto -10px; /* Centraliza e ajusta a posição */
+            position: static; 
+            margin: -90px auto -10px; 
             left: auto;
             top: auto;
         }
         
         .sobre-mim-container {
-            padding: 40px 20px 20px; /* Ajuste para mobile */
-            margin-top: 60px; /* Espaço para a foto */
+            padding: 40px 20px 20px; 
+            margin-top: 60px; 
         }
         
         h1 {
-            font-size: 50px; /* Título menor */
+            font-size: 80px; 
             text-align: center;
         }
         
         .texto p {
-            font-size: 14px; /* Texto um pouco menor */
+            font-size: 14px; 
         }
         
         .cabecalho {
-            height: 100px; /* Cabeçalho mais compacto */
+            height: 100px;
             font-size: 18px;
         }
         
